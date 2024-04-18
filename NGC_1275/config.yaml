@@ -1,0 +1,24 @@
+general:
+    log: {level: info, filename: null, filemode: null, format: null, datefmt: null}
+    outdir: ./NGC_1275
+    n_jobs: 1
+    datasets_file: NGC_1275/datasets/datasets.yaml
+    models_file: NGC_1275/datasets/models.yaml
+    data_file: NGC_1275/data
+    tables_file: NGC_1275/tables
+    figures_file: NGC_1275/figures
+target:
+    name: NGC 1275
+    position: {frame: icrs, lon: 49.95066662584999 deg, lat: 41.51169690301 deg}
+    model:
+        name: NGC_1275 - lp
+        type: SkyModel
+        spectral:
+            type: LogParabolaSpectralModel
+            parameters:
+            - {name: amplitude, value: 3.893059391637172e-11, unit: MeV-1 s-1 cm-2,
+                error: 2.9325158761539134e-13}
+            - {name: reference, value: 917.9805297851562, unit: MeV}
+            - {name: alpha, value: 1.9612562692138997, error: 0.007311445883505525}
+            - {name: beta, value: 0.09689883464835694, error: 0.0028590699110186313}
+    redshift: 0.116

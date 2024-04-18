@@ -1,0 +1,31 @@
+general:
+    log: {level: INFO, filename: null, filemode: null, format: null, datefmt: null}
+    outdir: .
+    n_jobs: 1
+    datasets_file: analysis/NGC_1275/datasets/datasets.yaml
+    models_file: analysis/NGC_1275/datasets/models.yaml
+    config_file: analysis/NGC_1275/config.yaml
+    analysis_path: analysis/NGC_1275
+roi:
+    target:
+        name: NGC 1275
+        position: {frame: icrs, lon: 49.95066662584999 deg, lat: 41.51169690301 deg}
+        model: {}
+    radius: 0.2 deg
+    catalogs: all
+    dict_sep:
+        3FGL J0319.8+4130:
+            position: {lon: 49.95859909057617 deg, lat: 41.51369857788086 deg, frame: icrs}
+            separation: 0.006268102756169319
+        4FGL J0319.8+4130:
+            position: {lon: 49.95750045776367 deg, lat: 41.51210021972656 deg, frame: icrs}
+            separation: 0.005133165998942915
+        2FHL J0319.8+4131:
+            position: {lon: 49.96699905395508 deg, lat: 41.52190017700195 deg, frame: icrs}
+            separation: 0.015926628301580113
+        3FHL J0319.8+4130:
+            position: {lon: 49.95999526977539 deg, lat: 41.51228332519531 deg, frame: icrs}
+            separation: 0.0070100191249547975
+energy_range: {min: null, max: null}
+plot:
+    leg_style: {}

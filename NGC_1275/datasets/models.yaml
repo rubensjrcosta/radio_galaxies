@@ -1,0 +1,20 @@
+components:
+-   name: model-fit
+    type: SkyModel
+    spectral:
+        type: LogParabolaSpectralModel
+        parameters:
+        -   name: amplitude
+            value: 3.893059391637172e-11
+            unit: MeV-1 s-1 cm-2
+            error: 2.9325158761539134e-13
+        -   name: reference
+            value: 917.9805297851562
+            unit: MeV
+        -   name: alpha
+            value: 1.9612562692138997
+            error: 0.007311445883505525
+        -   name: beta
+            value: 0.09689883464835694
+            error: 0.0028590699110186313
+covariance: models_covariance.dat
