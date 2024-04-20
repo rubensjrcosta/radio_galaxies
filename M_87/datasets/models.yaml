@@ -24,19 +24,19 @@ components:
             value: 1.3428703617853227e-12
             unit: MeV-1 s-1 cm-2
             error: 5.746777479748089e-14
-            link: amplitude@lNpaC7Uh
+            link: amplitude@9RzK6p-F
         -   name: reference
             value: 1123.6622314453125
             unit: MeV
-            link: reference@uSN_Qr16
+            link: reference@Iml_pO2b
         -   name: alpha
             value: 2.023003178587116
             error: 0.041992748294370635
-            link: alpha@LdZgcTlF
+            link: alpha@kaYFQTU0
         -   name: beta
             value: 0.05355659651490327
             error: 0.020572599209319004
-            link: beta@gY95-ub3
+            link: beta@-HKMQaP2
 -   name: 4FGL_J1230.8+1223_lp
     type: SkyModel
     datasets_names: 4FGL J1230.8+1223
@@ -47,19 +47,19 @@ components:
             value: 1.3428703617853227e-12
             unit: MeV-1 s-1 cm-2
             error: 5.746777479748089e-14
-            link: amplitude@lNpaC7Uh
+            link: amplitude@9RzK6p-F
         -   name: reference
             value: 1123.6622314453125
             unit: MeV
-            link: reference@uSN_Qr16
+            link: reference@Iml_pO2b
         -   name: alpha
             value: 2.023003178587116
             error: 0.041992748294370635
-            link: alpha@LdZgcTlF
+            link: alpha@kaYFQTU0
         -   name: beta
             value: 0.05355659651490327
             error: 0.020572599209319004
-            link: beta@gY95-ub3
+            link: beta@-HKMQaP2
 -   name: 2FHL_J1230.8+1225_pl-2
     type: SkyModel
     datasets_names: 2FHL J1230.8+1225

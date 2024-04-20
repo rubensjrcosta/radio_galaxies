@@ -11,7 +11,7 @@ roi:
         name: M 87
         position: {frame: icrs, lon: 187.70593077 deg, lat: 12.39112325 deg}
         model: {}
-    radius: 0.25 deg
+    radius: 0.5 deg
     catalogs: all
     dict_sep:
         3FGL J1230.9+1224:

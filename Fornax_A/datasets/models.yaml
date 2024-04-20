@@ -23,16 +23,16 @@ components:
         -   name: index
             value: 2.1479107341912953
             error: 0.04432153147185463
-            link: index@Gp4Y-OA3
+            link: index@2FrDAmnF
         -   name: amplitude
             value: 1.7451330423109135e-13
             unit: MeV-1 s-1 cm-2
             error: 1.1325137596913921e-14
-            link: amplitude@rsG-CdCN
+            link: amplitude@5Hz4qIgw
         -   name: reference
             value: 1775.84423828125
             unit: MeV
-            link: reference@GAw9FZ5g
+            link: reference@vE9k6tR6
 -   name: 4FGL_J0322.6-3712e_pl
     type: SkyModel
     datasets_names: 4FGL J0322.6-3712e
@@ -42,16 +42,16 @@ components:
         -   name: index
             value: 2.1479107341912953
             error: 0.04432153147185463
-            link: index@Gp4Y-OA3
+            link: index@2FrDAmnF
         -   name: amplitude
             value: 1.7451330423109135e-13
             unit: MeV-1 s-1 cm-2
             error: 1.1325137596913921e-14
-            link: amplitude@rsG-CdCN
+            link: amplitude@5Hz4qIgw
         -   name: reference
             value: 1775.84423828125
             unit: MeV
-            link: reference@GAw9FZ5g
+            link: reference@vE9k6tR6
 -   name: 3FHL_J0322.6-3712e_pl
     type: SkyModel
     datasets_names: 3FHL J0322.6-3712e
