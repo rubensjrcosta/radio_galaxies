@@ -10,8 +10,13 @@ from gammapy.maps.axes import UNIT_STRING_FORMAT
 from gammapy.datasets import Datasets
 from gammapy.estimators import FluxPoints
 from gammapy.datasets import Datasets, FluxPointsDataset
+from gammapy.modeling.models import Models
 
 from feupy.utils.units import Jy_to_erg_by_cm2_s
+
+def load_source_model(datasets_path = None):
+    """Load the `SkyModel` already prepared for the CTA simulation"""
+    return Models.read(f'{datasets_path}/models.yaml').select(name_substring="model-fit")[0].copy()
 
 def irfs_label_txt(irfs_opt):
     site = irfs_opt[0].replace("South", "S").replace("North", "N").replace("-SSTSubArray", "SST").replace("-MSTSubArray", "-MST").replace("-LSTSubArray", "-LST")

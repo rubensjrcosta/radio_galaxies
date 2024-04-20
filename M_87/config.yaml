@@ -1,0 +1,31 @@
+general:
+    log: {level: INFO, filename: null, filemode: null, format: null, datefmt: null}
+    outdir: ./M_87
+    n_jobs: 1
+    datasets_file: M_87/datasets/datasets.yaml
+    models_file: M_87/datasets/models.yaml
+    config_file: null
+    analysis_path: null
+roi:
+    target:
+        name: M 87
+        position: {frame: icrs, lon: 187.70593077 deg, lat: 12.39112325 deg}
+        model: {}
+    radius: 0.25 deg
+    catalogs: all
+    dict_sep:
+        3FGL J1230.9+1224:
+            position: {lon: 187.7279052734375 deg, lat: 12.406100273132324 deg, frame: icrs}
+            separation: 0.026171143974184907
+        4FGL J1230.8+1223:
+            position: {lon: 187.71229553222656 deg, lat: 12.388299942016602 deg, frame: icrs}
+            separation: 0.006827615972761018
+        2FHL J1230.8+1225:
+            position: {lon: 187.70399475097656 deg, lat: 12.43179988861084 deg, frame: icrs}
+            separation: 0.04072055931219022
+        3FHL J1230.8+1223:
+            position: {lon: 187.70333862304688 deg, lat: 12.388879776000977 deg, frame: icrs}
+            separation: 0.003382759388155969
+energy_range: {min: null, max: null}
+plot:
+    leg_style: {}

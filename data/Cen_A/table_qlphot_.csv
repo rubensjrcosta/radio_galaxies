@@ -1,0 +1,21 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: Spectral Region, datatype: string}
+# - {name: Band, datatype: string}
+# - {name: Apparent Mag or Flux, datatype: string}
+# - {name: Reference code, datatype: string}
+# - {name: "Absolute Mag or \u03BDL\u03BD [W]", datatype: string}
+# - {name: "\u03BDL\u03BD [L\u2609(Bolometric)]", datatype: string}
+# schema: astropy-2.0
+"Spectral Region" Band "Apparent Mag or Flux" "Reference code" "Absolute Mag or νLν [W]" "νLν [L☉(Bolometric)]"
+Gamma-Ray "14-195 keV (Swift)" "1470.7E-12                  erg/cm^2^/s" 2017ApJS..233...17R "255575812673562555565445988663427072.00 [W]" 6.65E+08
+X-Ray "20-100 keV (Suzaku)" "11E-10                      erg/cm^2^/s" 2011ApJ...743..124F "1.91E+38 [W]" 4.98E+11
+Ultraviolet "3320 A (OAO)" "11.3E-13     +/-   1.4E-13   ergs/cm^2^/s/A" 1979ApJ...228..419W "6.53E+35 +/- 8.98E+34 [W]" "1.70E+09 +/- 2.34E+08"
+Visual "V (V_T^0)" "6.42                        mag" 1991RC3.9.C...0000d "-2.15E+01 [mag]" 2.41E+10
+Near-Infrared "H_tot (2MASS LGA)" "4.271        +/-   0.017    mag" 2003AJ....125..525J "-23.61 +/- 0.15 [mag]" "1.65E+10 +/- 1.02E+09"
+Mid-Infrared "25 microns (IRAS)" "30.74        +/-   15  %    Jy" 1988ApJS...68...91R "6.41E+35 +/- 1.04E+35 [W]" "1.67E+09 +/- 2.69E+08"
+Far-Infrared "FIR (IRAS)" "1.34E-11                    W m^-2^" 1988ApJS...68...91R "2.33E+36 [W]" 6.06E+09
+Sub-Millimeter "350 microns (SPIRE)" "123.527      +/-   9.057    Jy" 2016MNRAS.456.3335S "1.83E+35 +/- 1.74E+34 [W]" "4.77E+08 +/- 4.52E+07"
+Millimeter "33 GHz (WMAP)" "82           +/-   12        Jy" 2008A&A...483..741I "4.66E+33 +/- 7.37E+32 [W]" "1.21E+07 +/- 1.92E+06"
+Radio "408 MHz" "2746.                       Jy" 1990PKS90.C...0000W "1.95E+33 [W]" 5.07E+06
