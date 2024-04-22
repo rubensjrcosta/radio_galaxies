@@ -1,0 +1,50 @@
+components:
+-   name: 3FGL_J0322.5-3721_pl
+    type: SkyModel
+    datasets_names: 3FGL J0322.5-3721
+    spectral:
+        type: PowerLawSpectralModel
+        parameters:
+        -   name: index
+            value: 2.1997873783111572
+            error: 0.10662395507097244
+        -   name: amplitude
+            value: 4.659784927710242e-13
+            unit: MeV-1 s-1 cm-2
+            error: 6.739995660112047e-14
+        -   name: reference
+            value: 1087.43603515625
+            unit: MeV
+-   name: 4FGL_J0322.6-3712e_pl
+    type: SkyModel
+    datasets_names: 4FGL J0322.6-3712e
+    spectral:
+        type: PowerLawSpectralModel
+        parameters:
+        -   name: index
+            value: 2.0537467002868652
+            error: 0.053236015141010284
+        -   name: amplitude
+            value: 1.8248189146818222e-13
+            unit: MeV-1 s-1 cm-2
+            error: 1.3141130876883917e-14
+        -   name: reference
+            value: 1775.84423828125
+            unit: MeV
+-   name: 3FHL_J0322.6-3712e_pl
+    type: SkyModel
+    datasets_names: 3FHL J0322.6-3712e
+    spectral:
+        type: PowerLawSpectralModel
+        parameters:
+        -   name: index
+            value: 2.2738497257232666
+            error: 0.36727213859558105
+        -   name: amplitude
+            value: 9.640511045710953e-13
+            unit: GeV-1 s-1 cm-2
+            error: 3.0981020158159234e-13
+        -   name: reference
+            value: 22.638219833374023
+            unit: GeV
+covariance: models_HE_covariance.dat

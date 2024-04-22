@@ -1,0 +1,13 @@
+datasets:
+- name: 3FGL J1230.9+1224
+  type: FluxPointsDataset
+  filename: 3FGL_J1230.9+1224.fits
+- name: 4FGL J1230.8+1223
+  type: FluxPointsDataset
+  filename: 4FGL_J1230.8+1223.fits
+- name: 2FHL J1230.8+1225
+  type: FluxPointsDataset
+  filename: 2FHL_J1230.8+1225.fits
+- name: 3FHL J1230.8+1223
+  type: FluxPointsDataset
+  filename: 3FHL_J1230.8+1223.fits

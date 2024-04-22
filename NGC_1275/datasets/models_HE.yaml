@@ -1,0 +1,75 @@
+components:
+-   name: 3FGL_J0319.8+4130_lp
+    type: SkyModel
+    datasets_names: 3FGL J0319.8+4130
+    spectral:
+        type: LogParabolaSpectralModel
+        parameters:
+        -   name: amplitude
+            value: 8.148528379825493e-11
+            unit: MeV-1 s-1 cm-2
+            error: 1.2965920654847696e-12
+        -   name: reference
+            value: 554.5762329101562
+            unit: MeV
+        -   name: alpha
+            value: 1.984697937965393
+            error: 0.014123921282589436
+        -   name: beta
+            value: 0.0647643432021141
+            error: 0.006601132918149233
+-   name: 4FGL_J0319.8+4130_lp
+    type: SkyModel
+    datasets_names: 4FGL J0319.8+4130
+    spectral:
+        type: LogParabolaSpectralModel
+        parameters:
+        -   name: amplitude
+            value: 4.711342080354619e-11
+            unit: MeV-1 s-1 cm-2
+            error: 3.946564483634646e-13
+        -   name: reference
+            value: 917.9805297851562
+            unit: MeV
+        -   name: alpha
+            value: 2.0492331981658936
+            error: 0.006619094405323267
+        -   name: beta
+            value: 0.06853765994310379
+            error: 0.003522735321894288
+-   name: 2FHL_J0319.8+4131_pl-2
+    type: SkyModel
+    datasets_names: 2FHL J0319.8+4131
+    spectral:
+        type: PowerLaw2SpectralModel
+        parameters:
+        -   name: amplitude
+            value: 5.099999936253319e-11
+            unit: s-1 cm-2
+            error: 1.3000000381735433e-11
+        -   name: index
+            value: 2.9700000286102295
+            error: 0.5199999809265137
+        -   name: emin
+            value: 0.05
+            unit: TeV
+        -   name: emax
+            value: 2.0
+            unit: TeV
+-   name: 3FHL_J0319.8+4130_pl
+    type: SkyModel
+    datasets_names: 3FHL J0319.8+4130
+    spectral:
+        type: PowerLawSpectralModel
+        parameters:
+        -   name: index
+            value: 2.866678237915039
+            error: 0.08737102895975113
+        -   name: amplitude
+            value: 5.6257422331729146e-11
+            unit: GeV-1 s-1 cm-2
+            error: 2.6487243388190196e-12
+        -   name: reference
+            value: 17.15590476989746
+            unit: GeV
+covariance: models_HE_covariance.dat
