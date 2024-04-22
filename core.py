@@ -101,3 +101,45 @@ def get_data_VizieR_byname(table=None, target=None):
         ds_fp = FluxPointsDataset(data=fp, name=name)
         datasets.append(ds_fp)
     return datasets
+
+
+def plot_sensitivity_from_table(sens_table, wich = 'e2dnde', ax=None, plot_xerr=False, **kwargs):
+    """ """
+
+    ax = plt.gca() if ax is None else ax
+
+    e = sens_table["e_ref"]
+    s = sens_table[wich]
+    
+    xlabel = f"Energy [{sens_table['e_ref'].unit.to_string(UNIT_STRING_FORMAT)}]"
+    if wich == 'excess':
+        ylabel = 'Excess counts'
+    elif wich == 'background':
+        ylabel = "Background counts"
+    elif wich == 'on_radii':
+        ylabel = f"On region radius [{e.unit.to_string(UNIT_STRING_FORMAT)}]"
+    elif wich == 'e2dnde':
+         ylabel = f"Flux Sensitivity [{e.unit.to_string(UNIT_STRING_FORMAT)}]"
+        
+    if plot_xerr == True:
+        w = sens_table["e_max"] - sens_table["e_min"]
+        xerr= w/2
+    else: xerr = None
+   
+    with quantity_support():
+        ax.errorbar(
+            e,
+            s,
+            xerr=xerr,
+            **kwargs,
+        )
+
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    
+    # Style settings
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.legend(loc="lower left", scatterpoints=1, handlelength = 3, fontsize=8)
+
+    return ax

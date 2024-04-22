@@ -15,24 +15,6 @@ components:
         -   name: reference
             value: 481.17034912109375
             unit: MeV
--   name: model-fit
-    type: SkyModel
-    spectral:
-        type: PowerLawSpectralModel
-        parameters:
-        -   name: index
-            value: 2.6243044473152253
-            error: 0.018901684446542638
-            link: index@4sBmn-pv
-        -   name: amplitude
-            value: 1.0933011992587408e-11
-            unit: MeV-1 s-1 cm-2
-            error: 1.862400300420433e-13
-            link: amplitude@T3ylBFma
-        -   name: reference
-            value: 777.9395751953125
-            unit: MeV
-            link: reference@GiDhR89p
 -   name: 4FGL_J1325.5-4300_pl
     type: SkyModel
     datasets_names: 4FGL J1325.5-4300
@@ -40,18 +22,15 @@ components:
         type: PowerLawSpectralModel
         parameters:
         -   name: index
-            value: 2.6243044473152253
-            error: 0.018901684446542638
-            link: index@4sBmn-pv
+            value: 2.5911266803741455
+            error: 0.019683828577399254
         -   name: amplitude
-            value: 1.0933011992587408e-11
+            value: 1.0937951933076562e-11
             unit: MeV-1 s-1 cm-2
-            error: 1.862400300420433e-13
-            link: amplitude@T3ylBFma
+            error: 2.1683967555558015e-13
         -   name: reference
             value: 777.9395751953125
             unit: MeV
-            link: reference@GiDhR89p
 -   name: 2FHL_J1325.6-4301_pl-2
     type: SkyModel
     datasets_names: 2FHL J1325.6-4301
@@ -87,4 +66,4 @@ components:
         -   name: reference
             value: 21.502309799194336
             unit: GeV
-covariance: models_covariance.dat
+covariance: models_HE_covariance.dat
