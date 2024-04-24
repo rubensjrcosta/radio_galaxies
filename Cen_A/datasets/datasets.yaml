@@ -1,7 +1,4 @@
 datasets:
-- name: 3FGL J1325.4-4301
-  type: FluxPointsDataset
-  filename: 3FGL_J1325.4-4301.fits
 - name: 4FGL J1325.5-4300
   type: FluxPointsDataset
   filename: 4FGL_J1325.5-4300.fits

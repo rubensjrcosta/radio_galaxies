@@ -1,0 +1,72 @@
+general:
+    log: {level: INFO, filename: null, filemode: null, format: null, datefmt: null}
+    outdir: .
+    n_jobs: 1
+    datasets_file: datasets/datasets.yaml
+    models_file: datasets/models.yaml
+observations:
+    datastore: $GAMMAPY_DATA/hess-dl3-dr1
+    obs_ids: []
+    obs_file: null
+    obs_cone: {frame: null, lon: null, lat: null, radius: null}
+    obs_time: {start: null, stop: null}
+    required_irf: [aeff, edisp, psf, bkg]
+observation:
+    target:
+        name: Cen A
+        position: {frame: icrs, lon: 201.365063376833 deg, lat: -43.019112508083 deg}
+        model: {}
+        redshift: null
+        ebl_model_name: null
+    livetime: 200.0 h
+    offset: 0.5 deg
+    position_angle: 0.0 deg
+    required_irfs: [North, AverageAz, 20deg, 0.5h]
+datasets:
+    type: 1d
+    stack: true
+    geom:
+        wcs:
+            skydir: {frame: null, lon: null, lat: null}
+            binsize: 0.02 deg
+            width: {width: 5.0 deg, height: 5.0 deg}
+            binsize_irf: 0.2 deg
+        selection: {offset_max: 2.5 deg}
+        axes:
+            energy: {min: 0.1 TeV, max: 32.0 TeV, nbins: 12, name: energy}
+            energy_true: {min: 0.032 TeV, max: 100.0 TeV, nbins: 15, name: energy_true}
+    map_selection: [counts, exposure, background, psf, edisp]
+    background:
+        method: null
+        exclusion: null
+        parameters: {}
+    safe_mask:
+        methods: [aeff-default]
+        parameters: {}
+    on_region: {frame: icrs, lon: 201.365063376833 deg, lat: -43.019112508083 deg,
+        radius: 0.11 deg}
+    containment_correction: true
+    use_region_center: false
+onoff: {acceptance: 1, acceptance_off: 20}
+statistics:
+    alpha: null
+    wstat: {}
+    fitted_parameters: {}
+    n_obs: 1
+    int: 1
+sensitivity: {gamma_min: 10, n_sigma: 5, bkg_syst_fraction: 0.1}
+fit:
+    fit_range: {min: null, max: null}
+flux_points:
+    energy: {min: 1.0 TeV, max: 10.0 TeV, nbins: 5, name: energy}
+    source: source
+    parameters: {selection_optional: all}
+excess_map:
+    correlation_radius: 0.1 deg
+    parameters: {}
+    energy_edges: {min: 1.0 TeV, max: 10.0 TeV, nbins: 5, name: energy}
+light_curve:
+    time_intervals: {start: null, stop: null}
+    energy_edges: {min: 1.0 TeV, max: 10.0 TeV, nbins: 5, name: energy}
+    source: source
+    parameters: {selection_optional: all}

@@ -1,90 +1,22 @@
 components:
--   name: 3FGL_J1325.4-4301_pl
-    type: SkyModel
-    datasets_names: 3FGL J1325.4-4301
-    spectral:
-        type: PowerLawSpectralModel
-        parameters:
-        -   name: index
-            value: 2.7029895782470703
-            error: 0.029256170615553856
-        -   name: amplitude
-            value: 4.209826237611125e-11
-            unit: MeV-1 s-1 cm-2
-            error: 1.2853614657012957e-12
-        -   name: reference
-            value: 481.17034912109375
-            unit: MeV
 -   name: model-fit
     type: SkyModel
     spectral:
-        type: PowerLawSpectralModel
+        type: LogParabolaSpectralModel
         parameters:
-        -   name: index
-            value: 2.6243044473152253
-            error: 0.018901684446542638
-            link: index@f0uvh85F
         -   name: amplitude
-            value: 1.0933011992587408e-11
-            unit: MeV-1 s-1 cm-2
-            error: 1.862400300420433e-13
-            link: amplitude@SNSxw5RJ
+            value: 9.624167539509183e-13
+            unit: TeV-1 s-1 cm-2
+            error: 5.260492315810881e-12
+            max: 1.0e-12
         -   name: reference
-            value: 777.9395751953125
-            unit: MeV
-            link: reference@EJzVHrws
--   name: 4FGL_J1325.5-4300_pl
-    type: SkyModel
-    datasets_names: 4FGL J1325.5-4300
-    spectral:
-        type: PowerLawSpectralModel
-        parameters:
-        -   name: index
-            value: 2.6243044473152253
-            error: 0.018901684446542638
-            link: index@f0uvh85F
-        -   name: amplitude
-            value: 1.0933011992587408e-11
-            unit: MeV-1 s-1 cm-2
-            error: 1.862400300420433e-13
-            link: amplitude@SNSxw5RJ
-        -   name: reference
-            value: 777.9395751953125
-            unit: MeV
-            link: reference@EJzVHrws
--   name: 2FHL_J1325.6-4301_pl-2
-    type: SkyModel
-    datasets_names: 2FHL J1325.6-4301
-    spectral:
-        type: PowerLaw2SpectralModel
-        parameters:
-        -   name: amplitude
-            value: 1.7499999713233017e-11
-            unit: s-1 cm-2
-            error: 8.400000313379952e-12
-        -   name: index
-            value: 2.619999885559082
-            error: 0.800000011920929
-        -   name: emin
-            value: 0.05
+            value: 10.0
             unit: TeV
-        -   name: emax
-            value: 2.0
-            unit: TeV
--   name: 3FHL_J1325.5-4300_pl
-    type: SkyModel
-    datasets_names: 3FHL J1325.5-4300
-    spectral:
-        type: PowerLawSpectralModel
-        parameters:
-        -   name: index
-            value: 2.379218816757202
-            error: 0.22259102761745453
-        -   name: amplitude
-            value: 3.4381432163083092e-12
-            unit: GeV-1 s-1 cm-2
-            error: 5.535642473922242e-13
-        -   name: reference
-            value: 21.502309799194336
-            unit: GeV
+        -   name: alpha
+            value: 2.1113183539811247
+            error: 1.623103486160373
+        -   name: beta
+            value: 0.39252626231477883
+            error: 0.40935868913060364
+            min: 0.0
 covariance: models_covariance.dat
